@@ -1,8 +1,10 @@
 <script setup>
+import { size } from '@/composables/use-size'
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <main>
+    <p>Window Width: {{ size.width }}</p>
+    <p>Window Height: {{ size.height }}</p>
+  </main>
 </template>
