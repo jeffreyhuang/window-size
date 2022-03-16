@@ -1,10 +1,12 @@
 <script setup>
-import { size } from '@/composables/use-size'
+import { useWindowSize } from '@/composables/use-window-size'
+
+const { width, height } = useWindowSize()
 </script>
 
 <template>
   <main>
-    <p>Window Width: {{ size.width }}</p>
-    <p>Window Height: {{ size.height }}</p>
+    <p>Window Width: {{ width }}</p>
+    <p>Window Height: {{ height }}</p>
   </main>
 </template>
